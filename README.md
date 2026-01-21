@@ -1,10 +1,1 @@
-# Search 1
-1) حرف ال C معناه Currency ف البرنامج بيشوف اعدادات الجهاز ويطلع ال output علي حسب علمة البلد
-2) 1.بيحط زمز العملة لوحده
-   2.بيظبط الكسور العشرية تلقائي
-   3.مفيد جدا في (الفواتير، الحسابات، البرامج المالية)
-3)int A = 5;
-  int B = 20;
-  Console.WriteLine($"Result: {(double)A / B:P}");
-
-  Result: 25.00 %
+[Search Tasks.docx](https://github.com/user-attachments/files/24769732/Search.Tasks.docx)
