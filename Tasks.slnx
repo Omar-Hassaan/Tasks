@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="../../CSharpOOP/Tasks/TaskThree/TaskThree.csproj" Id="82ee6187-7583-4504-afe0-df8a63ece48b" />
   <Project Path="TaskOne/TaskOne.csproj" Id="543c45a6-6354-4c68-b81a-f8b12cad5a07" />
   <Project Path="TaskTwo/TaskTwo.csproj" Id="3283035d-ea8b-4059-9b46-9c1a1c334ba0" />
 </Solution>
