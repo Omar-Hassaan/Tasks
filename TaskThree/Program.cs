@@ -8,12 +8,12 @@
             public string author;
             public string isbn;
             public bool availability;
-            public Book(string title, string author, string isbn, bool availability = true)
+            public Book(string title, string author, string isbn)
             {
                 this.title = title;
                 this.author = author;
                 this.isbn = isbn;
-                this.availability = availability;
+                this.availability = true;
             }
         }
         public class Library
@@ -100,7 +100,6 @@
                 return "Book already returned.";
             }
         }
-
         static void Main(string[] args)
         {
             string selectedOption = "";
