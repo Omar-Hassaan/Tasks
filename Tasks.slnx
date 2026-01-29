@@ -2,7 +2,8 @@
   <Folder Name="/TaskFour/">
     <Project Path="TaskFour/BounsTask/BounsTask.csproj" Id="6f42f490-beb1-4881-925f-84a37377d7ed" />
     <Project Path="TaskFour/MainTask/MainTask.csproj" Id="0eecd7ac-00ec-4b9b-8abe-020ffafd23ac" />
-    <Project Path="TaskFour/SearchTask/SearchTask.csproj" Id="28f3b167-4c35-4550-8d25-9dc8c96805aa" />
+    <Project Path="TaskFour/SearchTaskOne/SearchTaskOne.csproj" Id="332aa7bd-6450-47ba-ac6c-090abb4f884f" />
+    <Project Path="TaskFour/SearchTaskTwo/SearchTaskTwo.csproj" Id="9ca4aeb1-5c02-4d7f-b5c1-d5c54b8b2c1b" />
   </Folder>
   <Project Path="TaskOne/TaskOne.csproj" Id="543c45a6-6354-4c68-b81a-f8b12cad5a07" />
   <Project Path="TaskThree/TaskThree.csproj" Id="a7d85597-a2dd-4aa9-8640-1a4b371ffd6d" />
