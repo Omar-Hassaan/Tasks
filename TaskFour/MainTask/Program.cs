@@ -155,48 +155,22 @@
             Console.WriteLine($"\n=== Depositing to {accounts[0].GetType().Name} Accounts =================================");
             foreach (var acc in accounts)
             {
-                if (!acc.Name.StartsWith("Unnamed"))
-                {
-                    if (acc.Deposit(amount))
-                    {
-                        Console.WriteLine($"Deposited {amount} to {acc.Name}");
-                        Console.WriteLine($"Balance: {acc.Balance}");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Failed Deposit of {amount} to {acc.Name}");
-                    }
-                }
+                if (acc.Deposit(amount))
+                    Console.WriteLine($"Deposited {amount} to {acc}");
                 else
-                {
-                    Console.WriteLine("No deposit made for unnamed account.");
-                }
-                Console.WriteLine("==================================");
+                    Console.WriteLine($"Failed Deposit of {amount} to {acc}");
             }
+
         }
         public static void Withdraw(List<Account> accounts, double amount)
         {
             Console.WriteLine($"\n=== Withdrawing from {accounts[0].GetType().Name} Accounts ==============================");
             foreach (var acc in accounts)
             {
-                if (!acc.Name.StartsWith("Unnamed"))
-                {
-                    if (acc.Withdraw(amount))
-                    {
-                        Console.WriteLine($"Withdrew {amount} from {acc.Name}");
-                        Console.WriteLine($"Balance: {acc.Balance}");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Failed Withdrawal of {amount} from {acc.Name}");
-                        Console.WriteLine($"Balance: {acc.Balance}");
-                    }
-                }
+                if (acc.Withdraw(amount))
+                    Console.WriteLine($"Withdrew {amount} from {acc}");
                 else
-                {
-                    Console.WriteLine("No deposit made for unnamed account.");
-                }
-                Console.WriteLine("==================================");
+                    Console.WriteLine($"Failed Withdrawal of {amount} from {acc}");
             }
         }
     }
