@@ -10,7 +10,6 @@
             Name = name;
             Balance = balance;
         }
-
         public virtual bool Deposit(double amount)
         {
             if (amount < 0)
@@ -21,7 +20,6 @@
                 return true;
             }
         }
-
         public virtual bool Withdraw(double amount)
         {
             if (Balance - amount >= 0)
@@ -35,7 +33,7 @@
             }
         }
     }
-    class SavingsAccount : Account
+    public class SavingsAccount : Account
     {
         public double InterestRate { get; set; }
         public SavingsAccount(string name = "Unnamed Savings Account", double balance = 0.0, double interestRate = 0.0)
@@ -45,15 +43,14 @@
         }
         public override bool Deposit(double amount)
         {
-            if (amount > 0)
-            {
-                Balance += amount + (amount * InterestRate / 100);
-                return true;
-            }
-            return false;
+            if (amount <= 0)
+                return false;
+
+            Balance += amount + (amount * (InterestRate / 100));
+            return true;
         }
     }
-    class CheckingAccount : Account
+    public class CheckingAccount : Account
     {
         private double WithdrawalFee = 1.5;
         public CheckingAccount(string name = "Unnamed Checking Account", double balance = 0.0)
@@ -65,7 +62,7 @@
             return base.Withdraw(amount + WithdrawalFee);
         }
     }
-    class TrustAccount : Account
+    public class TrustAccount : Account
     {
         private double BonusThreshold = 5000.0;
         private double BonusAmount = 50.0;
@@ -78,22 +75,20 @@
         }
         public override bool Deposit(double amount)
         {
+            if (amount <= 0)
+                return false;
+
             if (amount >= BonusThreshold)
-            {
                 amount += BonusAmount;
-            }
+
             return base.Deposit(amount);
         }
         public override bool Withdraw(double amount)
         {
             if (amount > Balance * MaxWithdrawPercent)
-            {
                 return false;
-            }
-            else
-            {
-                return base.Withdraw(amount);
-            }
+
+            return base.Withdraw(amount);
         }
     }
 
@@ -146,7 +141,6 @@
             AccountUtil.Withdraw(trustAccounts, 500);
         }
     }
-
     public class AccountUtil
     {
         // Utility helper functions for Account class
