@@ -5,6 +5,7 @@
     <Project Path="TaskFour/SearchTaskOne/SearchTaskOne.csproj" Id="332aa7bd-6450-47ba-ac6c-090abb4f884f" />
     <Project Path="TaskFour/SearchTaskTwo/SearchTaskTwo.csproj" Id="9ca4aeb1-5c02-4d7f-b5c1-d5c54b8b2c1b" />
   </Folder>
+  <Project Path="TaskFive/TaskFive.csproj" Id="7ce2e04f-b374-4a4d-aa8d-525caea76072" />
   <Project Path="TaskOne/TaskOne.csproj" Id="543c45a6-6354-4c68-b81a-f8b12cad5a07" />
   <Project Path="TaskThree/TaskThree.csproj" Id="a7d85597-a2dd-4aa9-8640-1a4b371ffd6d" />
   <Project Path="TaskTwo/TaskTwo.csproj" Id="3283035d-ea8b-4059-9b46-9c1a1c334ba0" />
