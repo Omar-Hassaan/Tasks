@@ -1,0 +1,9 @@
+Sales_Office (Num, Loc)
+
+Employee (Emp_Id, Name, Sales_Num)
+
+Property (ID, Add, City, State, Zip, Sales_Num)
+
+Owner (ID, Name)
+
+Property_Owner (Onwer_Id, Prop_Id, Percent_Owned)

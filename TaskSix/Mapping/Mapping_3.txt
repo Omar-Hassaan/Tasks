@@ -1,0 +1,13 @@
+Ward (ID, Name)
+
+Patient (ID, Name, BOD, Ward_Id, Consultant_Id)
+
+Consultant (ID, Name)
+
+Nurse (ID, Name, Ward_Id)
+
+Drug (Code, Rec_Dosage)
+
+Patient_Consultant (Patient_Id, Consultant_Id)
+
+Patient_Nurse_Drug (Patient_Id, Nurse_Id, Drug_Code, Date, Time, Dosage)
