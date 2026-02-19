@@ -1,0 +1,11 @@
+Musician (ID, Name, St, City, Phone)
+
+Instrument (Name, Key)
+
+Album (Id, Date, Title, Musician_ID)
+
+Song (Title, Author, Album_ID)
+
+Musician_Instrument (Musician_ID, Instrument_Name)
+
+Musician_Song (Musician_ID, Song_Title)
