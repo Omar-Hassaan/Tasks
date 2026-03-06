@@ -1,0 +1,9 @@
+Patient (Ur_Number, Name, Address, Age, Email, Phone, MedicareNumber, PrimaryDoctorID)
+
+Doctor (DoctorID, Name, Email, Phone, Specialty, YearsExperience)
+
+PharmaceuticalCompany (CompanyName, Address, Phone)
+
+Drug (DrugID, TradeName, DrugStrength, CompanyName)
+
+Prescription (PatientURNumber, DoctorID, DrugID, Date, Quantity)
