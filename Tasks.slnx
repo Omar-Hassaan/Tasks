@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/TaskEleven/">
+    <Project Path="TaskEleven/LINQTask/LINQTask.csproj" Id="fb8354ac-b896-4824-8ad6-ff71d2150848" />
+  </Folder>
   <Folder Name="/TaskFour/">
     <Project Path="TaskFour/BounsTask/BounsTask.csproj" Id="6f42f490-beb1-4881-925f-84a37377d7ed" />
     <Project Path="TaskFour/MainTask/MainTask.csproj" Id="0eecd7ac-00ec-4b9b-8abe-020ffafd23ac" />
